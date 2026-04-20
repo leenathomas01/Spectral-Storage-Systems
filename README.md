@@ -100,8 +100,8 @@ This claim is falsifiable. See `VALIDATION/falsification-brief.md` for explicit 
 
 # Related
 
-[Research Index](https://github.com/leenathomas01/Research-index)
-[Reconstruction-Oriented Storage](https://github.com/leenathomas01/Reconstruction-Oriented-Storage)
+- [Research Index](https://github.com/leenathomas01/Research-index)
+- [Reconstruction-Oriented Storage](https://github.com/leenathomas01/Reconstruction-Oriented-Storage)
 
 ---
 
