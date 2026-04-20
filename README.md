@@ -18,6 +18,30 @@
 
 --- 
 
+---
+
+## Repository Structure
+
+```
+SSS/
+├── SPEC/
+│   ├── architecture.md          # Core invariants & system model
+│   ├── controller-logic.md      # Signal flow specification
+│   ├── coherence-model.md       # γ metric & recovery mechanisms
+│   └── mvs-constraints.md       # Minimum Viable Substrate requirements
+├── VALIDATION/
+│   ├── simulator.py             # Envelope-mapping simulator (v0.4)
+│   ├── bench-protocol.md        # Physical validation protocol
+│   └── falsification-brief.md   # Architectural kill-switches
+├── HANDOFF/
+│   ├── technical-memo.md        # Flash-architect summary
+│   └── engineering-faq.md       # Anticipated objections
+└── README.md
+```
+
+---
+
+
 ## Technical Memo
 
 ## 1. The Problem: Post-NAND Scaling Limits
@@ -43,12 +67,5 @@ SSS replaces Bit Error Rate (BER) with **Correlation Coherence (γ)** as the pri
 | Integrity Metric | BER + ECC/LDPC | γ (Correlation) |
 | Failure Mode | Bad Blocks (Binary) | Resolution Loss (Analog) |
 | Read Mechanism | Charge Drain | Resonant Sensing |
-
-**γ Definition:**
-```
-γ = |⟨response, reference⟩| / (‖response‖ · ‖reference‖)
-```
-
-Range: 0 (noise) to 1 (perfect). Think matched-filter correlation, not bit counting.
 
 ---
