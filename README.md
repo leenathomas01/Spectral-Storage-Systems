@@ -69,3 +69,24 @@ SSS replaces Bit Error Rate (BER) with **Correlation Coherence (γ)** as the pri
 | Read Mechanism | Charge Drain | Resonant Sensing |
 
 ---
+
+
+## Validation Status
+
+### Mathematical Validation (Complete)
+
+- **γ-Monotonicity:** Verified — smooth recovery basin, no chaotic regions
+- **Pull-In Envelope:** Verified — recoverable up to 1.2 rad phase drift
+- **Graceful Degradation:** Verified — 25% substrate erasure yields γ ≈ 0.68 (recoverable)
+- **Scaling:** Verified — N=200 writes, 4096 bands, no interference saturation
+
+---
+
+### Physical Validation (Pending)
+
+- **Reference Substrate:** <redacted>
+- **Protocol:** Bench Protocol v1.0
+- **Gate:** Falsification Brief v1.0
+
+---
+
