@@ -90,3 +90,11 @@ SSS replaces Bit Error Rate (BER) with **Correlation Coherence (γ)** as the pri
 
 ---
 
+## The Core Claim
+
+> Information encoded as distributed spectral interference degrades gracefully under substrate damage. A controller-side optimizer can recover identity from partial, noisy, or phase-drifted substrates without requiring cell-level integrity.
+
+This claim is falsifiable. See `VALIDATION/falsification-brief.md` for explicit kill-switches.
+
+---
+
