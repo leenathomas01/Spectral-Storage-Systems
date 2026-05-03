@@ -27,7 +27,9 @@ The evidence here points away from “more bands alone fixes stability” and to
 
 New offshoot - reframe IVSA..and pivot (03May2026)
 
+---
 
+```
 import numpy as np
 
 class IVSASimulator:
@@ -151,6 +153,7 @@ class IVSASimulator:
 if _name_ == "_main_":
     sim = IVSASimulator()
     sim.run_demo()
+```
 
 
 
