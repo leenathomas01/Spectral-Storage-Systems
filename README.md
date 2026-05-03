@@ -18,17 +18,25 @@
 ## Repository Structure
 
 /core/
+
 controller-model.md ← (important, formal spec)
+
 convergence-dynamics.md
+
 coherence-metrics.md (γ, Δγ, entropy)
 
 /emulation/
+
 simulator_numpy.py
+
 simulator_torch.py
 
 /spec/
+
 minimum-viable-substrate.md
+
 stability-and-pruning.md
+
 failure-modes.md
 
 /notes/ (maybe?)
