@@ -1,12 +1,7 @@
-!! RAW NOTES WARNING!!
 
 # Spectral-Storage-Systems (SSS)
 
-**Status:** Pre-Pilot Systems Architecture
-
-**Version:** 1.0
-
-**Validation:** Mathematical (v0.4 Simulator) — Awaiting Physical Bench
+> A class of memory architectures where data is encoded as interference patterns and accessed through convergence dynamics rather than address-based retrieval.
 
 ---
 
@@ -22,22 +17,25 @@
 
 ## Repository Structure
 
-```
-SSS/
-├── SPEC/
-│   ├── architecture.md          # Core invariants & system model
-│   ├── controller-logic.md      # Signal flow specification
-│   ├── coherence-model.md       # γ metric & recovery mechanisms
-│   └── mvs-constraints.md       # Minimum Viable Substrate requirements
-├── VALIDATION/
-│   ├── simulator.py             # Envelope-mapping simulator (v0.4)
-│   ├── bench-protocol.md        # Physical validation protocol
-│   └── falsification-brief.md   # Architectural kill-switches
-├── HANDOFF/
-│   ├── technical-memo.md        # Flash-architect summary
-│   └── engineering-faq.md       # Anticipated objections
-└── README.md
-```
+/core/
+controller-model.md ← (important, formal spec)
+convergence-dynamics.md
+coherence-metrics.md (γ, Δγ, entropy)
+
+/emulation/
+simulator_numpy.py
+simulator_torch.py
+
+/spec/
+minimum-viable-substrate.md
+stability-and-pruning.md
+failure-modes.md
+
+/notes/ (maybe?)
+holographic-precursors.md
+zpre-links.md
+fxso-bridges.md
+
 
 ---
 
@@ -70,31 +68,6 @@ SSS replaces Bit Error Rate (BER) with **Correlation Coherence (γ)** as the pri
 
 ---
 
-
-## Validation Status
-
-### Mathematical Validation (Complete)
-
-- **γ-Monotonicity:** Verified — smooth recovery basin, no chaotic regions
-- **Pull-In Envelope:** Verified — recoverable up to 1.2 rad phase drift
-- **Graceful Degradation:** Verified — 25% substrate erasure yields γ ≈ 0.68 (recoverable)
-- **Scaling:** Verified — N=200 writes, 4096 bands, no interference saturation
-
----
-
-### Physical Validation (Pending)
-
-- **Reference Substrate:** <redacted>
-- **Protocol:** Bench Protocol v1.0
-- **Gate:** Falsification Brief v1.0
-
----
-
-## The Core Claim
-
-> Information encoded as distributed spectral interference degrades gracefully under substrate damage. A controller-side optimizer can recover identity from partial, noisy, or phase-drifted substrates without requiring cell-level integrity.
-
-This claim is falsifiable. See `VALIDATION/falsification-brief.md` for explicit kill-switches.
 
 ---
 
