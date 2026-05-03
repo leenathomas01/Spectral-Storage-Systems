@@ -1,3 +1,5 @@
+!! NOT FINALIZED ..Chaos Warning !!!
+
 
 # Spectral-Storage-Systems (SSS)
 
@@ -40,8 +42,11 @@ stability-and-pruning.md
 failure-modes.md
 
 /notes/ (maybe?)
+
 holographic-precursors.md
-zpre-links.md
+
+zpre-links.md (maybe not?)
+
 fxso-bridges.md
 
 
