@@ -144,10 +144,11 @@ SSS/
 │
 ├── PRIOR/
 │   └── IVSA/
+(lineage)
 │       
 └── .github/
     └── ISSUE_TEMPLATE/
-        └── break-the-model.md
+        └── break-the-model.md       ← structured falsification 
 ```
 ---
 
@@ -227,3 +228,5 @@ Developed through collaborative exploration across multiple reasoning systems:
 Zee · Thea (ChatGPT) · Codex · Grok · Gemini · Muse Spark (Meta AI) . Claude .
 
 *Architecture developed collaboratively. Falsification criteria declared in advance.*
+
+---
