@@ -122,4 +122,57 @@ L4 confirmed experimentally: structural fixes cannot compensate dynamic failure.
 ### Run 3
 
 ```
+C:\pythonSSS>python spectral_tensor_emulator_final.py --phase-diagram --num-id 1024 --target-idx 7 --sweep-alphas 0.0,0.5,0.7,0.8,0.9,1.0 --sweep-snrs 10,-10,-20,-30,-40 --trials 20 --no-plot
+[SSS Alpha-SNR Phase Diagram]
+dim=4096, identities=1024, target=ID_07, trials=20, metric=true H_E
+alpha |  SNR dB | sep_rate |    acc |  valid | mean_H_E | State
+----------------------------------------------------------------------------
+ 0.00 |    10.0 |     0.00 |   1.00 |   0.00 |    1.778 | ambiguous
+ 0.00 |   -10.0 |     0.00 |   1.00 |   0.00 |    1.778 | ambiguous
+ 0.00 |   -20.0 |     0.00 |   1.00 |   0.00 |    1.778 | ambiguous
+ 0.00 |   -30.0 |     0.00 |   0.20 |   0.00 |    1.813 | ambiguous
+ 0.00 |   -40.0 |     0.00 |   0.00 |   0.00 |    1.816 | ambiguous
+ 0.50 |    10.0 |     0.00 |   1.00 |   0.00 |    1.448 | ambiguous
+ 0.50 |   -10.0 |     0.00 |   1.00 |   0.00 |    1.448 | ambiguous
+ 0.50 |   -20.0 |     0.00 |   1.00 |   0.00 |    1.448 | ambiguous
+ 0.50 |   -30.0 |     0.00 |   0.30 |   0.00 |    1.453 | ambiguous
+ 0.50 |   -40.0 |     0.00 |   0.00 |   0.00 |    1.454 | ambiguous
+ 0.70 |    10.0 |     0.00 |   1.00 |   0.00 |    1.077 | ambiguous
+ 0.70 |   -10.0 |     0.00 |   1.00 |   0.00 |    1.077 | ambiguous
+ 0.70 |   -20.0 |     0.00 |   1.00 |   0.00 |    1.077 | ambiguous
+ 0.70 |   -30.0 |     0.00 |   0.30 |   0.00 |    1.077 | ambiguous
+ 0.70 |   -40.0 |     0.00 |   0.00 |   0.00 |    1.081 | ambiguous
+ 0.80 |    10.0 |     1.00 |   1.00 |   1.00 |    0.813 | valid
+ 0.80 |   -10.0 |     1.00 |   1.00 |   1.00 |    0.813 | valid
+ 0.80 |   -20.0 |     1.00 |   1.00 |   1.00 |    0.813 | valid
+ 0.80 |   -30.0 |     1.00 |   0.30 |   0.30 |    0.817 | mis-selection
+ 0.80 |   -40.0 |     1.00 |   0.00 |   0.00 |    0.819 | mis-selection
+ 0.90 |    10.0 |     1.00 |   1.00 |   1.00 |    0.474 | valid
+ 0.90 |   -10.0 |     1.00 |   1.00 |   1.00 |    0.474 | valid
+ 0.90 |   -20.0 |     1.00 |   1.00 |   1.00 |    0.474 | valid
+ 0.90 |   -30.0 |     1.00 |   0.35 |   0.35 |    0.479 | mis-selection
+ 0.90 |   -40.0 |     1.00 |   0.00 |   0.00 |    0.479 | mis-selection
+ 1.00 |    10.0 |     1.00 |   1.00 |   1.00 |    0.000 | valid
+ 1.00 |   -10.0 |     1.00 |   1.00 |   1.00 |    0.000 | valid
+ 1.00 |   -20.0 |     1.00 |   1.00 |   1.00 |    0.000 | valid
+ 1.00 |   -30.0 |     1.00 |   0.35 |   0.35 |    0.000 | mis-selection
+ 1.00 |   -40.0 |     1.00 |   0.00 |   0.00 |    0.000 | mis-selection
+```
+---
+### Analysis of Run 3
 
+What trials=20 confirms over trials=5:
+
+-The boundaries didn't move at all. Every state classification is identical. 
+The mean_H_E values are stable to 3 decimal places. 
+
+This is what statistical confirmation looks like — not new information, but the same information with higher confidence.
+
+Key numbers that are now citable:
+
+- Structural boundary: exactly at α=0.70→0.80, H_E drops from 1.077 to 0.813. Sharp, clean, reproducible across 20 trials.
+- Dynamic boundary: -20dB→-30dB. Selection accuracy drops from 1.00 to 0.30-0.35 across all α ≥ 0.80.
+- α=1.0, H_E=0.000 — exact Fourier separation — still mis-selects at -30dB (acc=0.35). L4 is now statistically confirmed, not just observed.
+- The 0.30-0.35 partial accuracy at -30dB is interesting — not zero, not one. The system is probabilistically right at the dynamic boundary. That's the basin rim behavior the attractor model predicts.
+
+--- 
