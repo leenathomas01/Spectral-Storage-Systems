@@ -10,7 +10,7 @@
 The phase boundary result is **observed, not confirmed.**
 
 It was produced with `trials=1`. Until the statistical run (`trials ≥ 20`)
-is complete, the phase diagram is a pilot result. It shows the right shape.
+is complete, the phase diagram is a pilot result. It shows a consistent shape in pilot runs (trials=1), not yet statistically confirmed
 It is not a confidence-banded boundary.
 
 Everything else in the table below is confirmed across multiple runs.
