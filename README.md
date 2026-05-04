@@ -1,4 +1,5 @@
-This repository is an open, falsifiable model. If it is wrong, it should fail under the conditions defined in VALIDATION/falsification-brief.md.
+This repository is an open, falsifiable model. 
+If it is wrong, it should fail under the conditions defined in HANDOFF/falsification-brief.md
 
 ---
 
