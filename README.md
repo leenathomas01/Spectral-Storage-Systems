@@ -123,6 +123,7 @@ Structural merging and dynamic confusion are orthogonal failure axes.
 ```
 SSS/
 ├── README.md                        ← this file
+├── LICENSE
 │
 ├── SPEC/
 │   ├── phase-diagram.md             ← frozen formal model + decision rule
@@ -132,17 +133,22 @@ SSS/
 ├── VALIDATION/
 │   ├── STATUS.md                    ← current validation scoreboard
 │   ├── spectral_tensor_emulator.py  ← primary validation script
-│   └── simulator.py                 ← prior envelope simulator (see PRIOR/)
+│   ├── simulator.py                 ← prior envelope simulator (see PRIOR/)
+│   └── plots/                       ← PNGs
 │
 ├── HANDOFF/
 │   ├── technical-memo.md            ← flash-engineer summary
 │   ├── engineering-faq.md           ← anticipated objections
-│   └── bench-protocol.md            ← physical validation protocol
+│   ├── bench-protocol.md            ← physical validation protocol
+│   └── falsification-brief.md       ← define binary conditions for architectural validation or invalidation
 │
-└── PRIOR/
-    └── IVSA/                        ← prior architecture specs (lineage)
+├── PRIOR/
+│   └── IVSA/
+│       
+└── .github/
+    └── ISSUE_TEMPLATE/
+        └── break-the-model.md
 ```
-
 ---
 
 ## Current Validation State
