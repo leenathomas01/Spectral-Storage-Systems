@@ -1,4 +1,4 @@
-> Raw thoughts/ runs before polishing
+> Raw thoughts/ runs and their analysis done before polishing
 
 
 ---
@@ -176,3 +176,10 @@ Key numbers that are now citable:
 - The 0.30-0.35 partial accuracy at -30dB is interesting — not zero, not one. The system is probabilistically right at the dynamic boundary. That's the basin rim behavior the attractor model predicts.
 
 --- 
+> for later: update status.md with the below
+>
+> The phase boundary result is statistically confirmed at trials=20 with the original
+validated emulator. The structural boundary (α=0.70–0.80) and dynamic
+boundary (-20 to -30 dB) are clean and consistent across all runs.
+Boundary classifications are identical between trials=5 and trials=20.
+mean_H_E values stable to 3 decimal places. This result is citable.
