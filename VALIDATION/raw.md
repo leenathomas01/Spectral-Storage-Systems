@@ -2,6 +2,7 @@
 
 
 ---
+### Run 1
 ```
 C:\pythonSSS>python spectral_tensor_emulator_final.py --no-plot
 [SSS Tensor Resonance Probe]
@@ -21,8 +22,40 @@ H_amp is still reported because it matches the original prototype scorer.
 
 ```
 
+### Analysis of run 1
+
+The four echo modes are testing four different recovery strategies:
+
+Legacy magnitude echo — FAILS
+
+- Locked on ID_14, not ID_07 (wrong basin)
+- H_E = 2.874 — completely ambiguous, basins merged
+- This is the old approach. It fails deliberately. It's the baseline showing why you need better recovery.
+
+Controlled magnitude echo — PASSES
+
+- Correct lock on ID_07
+- H_E = 0.252 — well separated
+- γ = 0.979 — strong convergence --> This is Case D from the spec. Textbook valid.
+
+Controlled complex echo — PASSES
+
+- Correct lock, H_E = 0.870 — still under H_crit=1.0 but closer to the boundary
+- γ = 0.946 Valid but with less margin than magnitude echo
+- Competitive elastic echo — PASSES cleanly
+- γ = 1.000, H_E = 0.062 — nearly perfect separation
+- d_gamma = 0.971 — dominant basin is crushing the competition --> This is the best recovery mode. This is what generated the original plots.
+
+The entropy floor line is important:
+
+- H_amp=1.558, H_E=0.062, nearest competitor=0.029
+- Even the exact target vector has H_E=0.062 at rest — that's the theoretical minimum for this codebook.
+- The competitive elastic echo is hitting essentially the floor. Can't do much better than this.
+
+---
 ---
 
+### Run 2
 ```
 C:\pythonSSS>python spectral_tensor_emulator_final.py --phase-diagram --num-id 1024 --target-idx 7 --sweep-alphas 0.0,0.5,0.7,0.8,0.9,1.0 --sweep-snrs 10,-10,-20,-30,-40 --trials 5 --no-plot
 [SSS Alpha-SNR Phase Diagram]
@@ -61,6 +94,10 @@ alpha |  SNR dB | sep_rate |    acc |  valid | mean_H_E | State
  1.00 |   -40.0 |     1.00 |   0.00 |   0.00 |    0.000 | mis-selection
 ```
 
+---
+
+### Analysis of Run 2
+
 This is the real result. Lets decode it properly.
 
 The phase boundary is sharp and exactly where theory predicts:
@@ -80,3 +117,9 @@ H_E is exactly zero at pure Fourier — perfect separation — but selection sti
 The basins are perfectly distinct, the system just can't find the right one in the noise. 
 
 L4 confirmed experimentally: structural fixes cannot compensate dynamic failure.
+
+---
+### Run 3
+
+```
+
