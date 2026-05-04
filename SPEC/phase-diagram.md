@@ -162,15 +162,15 @@ high alpha + very low SNR: clean but wrong-basin lock
 
 Capacity boundary:
 
-![SSS capacity boundary](../VALIDATION/spectral_capacity_surface.png)
+![SSS capacity boundary](../VALIDATION/plots/spectral_capacity_surface.png)
 
 SNR sweep:
 
-![SSS SNR sweep](../VALIDATION/spectral_snr_sweep.png)
+![SSS SNR sweep](../VALIDATION/plots/spectral_snr_sweep.png)
 
 Pilot alpha-SNR phase diagram:
 
-![SSS phase diagram](../VALIDATION/spectral_phase_diagram.png)
+![SSS phase diagram](../VALIDATION/plots/spectral_phase_diagram.png)
 
 ## 8. Observed Laws
 
