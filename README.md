@@ -1,3 +1,7 @@
+This repository is an open, falsifiable model. If it is wrong, it should fail under the conditions defined in VALIDATION/falsification-brief.md.
+
+---
+
 # Spectral Storage System (SSS)
 
 **Status:** Mathematical validation in progress — physical bench pending  
