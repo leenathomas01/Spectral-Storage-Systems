@@ -76,3 +76,7 @@ What should happen if you're correct?
 This repository defines a **falsifiable model**.
 
 Submissions that demonstrate failure under defined conditions are **valuable outcomes**, not bugs.
+
+See HANDOFF/falsification-brief.md for the pre-declared redlines.
+
+---
