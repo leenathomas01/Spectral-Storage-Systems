@@ -213,6 +213,6 @@ Full prior specification is in `PRIOR/` for lineage and reference.
 ## Contributors
 
 Developed through collaborative exploration across multiple reasoning systems:  
-Zee · Thea (ChatGPT) · Clodex · Grok · Gemini · Muse Spark (Meta AI)
+Zee · Thea (ChatGPT) · Codex · Grok · Gemini · Muse Spark (Meta AI) . Claude .
 
 *Architecture developed collaboratively. Falsification criteria declared in advance.*
