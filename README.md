@@ -5,7 +5,7 @@ If it is wrong, it should fail under the conditions defined in HANDOFF/falsifica
 
 # Spectral Storage System (SSS)
 
-**Status:** Mathematical validation in progress — physical bench pending  
+**Status:** Mathematical validation in progress - physical bench pending  
 **Version:** 0.1  
 **Lineage:** See `PRIOR/`
 
@@ -226,7 +226,7 @@ Full prior specification is in `PRIOR/` for lineage and reference.
 ## Contributors
 
 Developed through collaborative exploration across multiple reasoning systems:  
-Zee · Thea (ChatGPT) · Codex · Grok · Gemini · Muse Spark (Meta AI) . Claude .
+Zee · Thea (ChatGPT) · Codex 5.5 Extra High· Grok · Gemini · Muse Spark (Meta AI) . Claude .
 
 *Architecture developed collaboratively. Falsification criteria declared in advance.*
 
