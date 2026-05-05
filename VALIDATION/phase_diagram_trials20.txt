@@ -57,4 +57,6 @@ Elastic(E) criterion: target lock, gamma >= 0.85, H_E <= 1.0, delta gamma >= 0.2
 H_amp is still reported because it matches the original prototype scorer.
 Plot saved: VALIDATION\spectral_tensor_emulator.png
 
+(This was renamed to recovery_dynamics.png and uploaded in VALIDATION\plots)
+
 --------------------
