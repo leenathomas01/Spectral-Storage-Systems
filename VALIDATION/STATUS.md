@@ -164,7 +164,7 @@ Three panels, each measuring a different axis:
 
 ---
 
-![SSS α–SNR phase diagram (D=4096, N=1024, trials=20)](../VALIDATION/plots/spectral_phase_diagram.png)
+![SSS α–SNR phase diagram (D=4096, N=1024, trials=20)](../VALIDATION/plots/spectral_phase_diagram_20.png)
 
 **SSS α–SNR phase diagram (D=4096, N=1024, trials=20).**
 
