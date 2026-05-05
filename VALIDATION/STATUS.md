@@ -180,6 +180,22 @@ This demonstrates two orthogonal failure modes: structural (low α) and dynamic 
 
 ---
 
+## Recovery Dynamics (Iteration Behavior)
+
+The recovery process exhibits fast convergence toward attractor basins.
+
+- γ increases monotonically during recovery
+- H_E stabilizes to a regime-dependent value
+- Structural failure (low α) manifests as high entropy plateaus
+- Valid regimes show rapid convergence to low entropy states
+
+This supports the interpretation of phase-walk as approximate gradient descent.
+
+See: VALIDATION/plots/recovery_dynamics.png
+
+![Recovery dynamics across echo modes (N=32, D=4096)](../VALIDATION/plots/recovery_dynamics.png)
+---
+
 ## Physical Validation Gate
 
 Before any physical implementation claim, the SSS redlines must clear:
