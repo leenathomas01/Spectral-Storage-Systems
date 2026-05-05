@@ -238,3 +238,20 @@ Zee · Thea (ChatGPT) · Codex 5.5 Extra High· Grok · Gemini · Muse Spark (Me
 *Architecture developed collaboratively. Falsification criteria declared in advance.*
 
 ---
+
+## Research Index
+
+**For a complete catalog of related research:**  
+📂 [Research Index](https://github.com/leenathomas01/research-index)
+
+---
+
+## Further Exploration
+
+→ [Reconstruction-Oriented Storage](https://github.com/leenathomas01/Reconstruction-Oriented-Storage) --> focuses on conceptual framing
+
+→ [SMA-SIB](https://github.com/leenathomas01/SMA-SIB-Irreversible-Semantic-Memory-for-High-Sensitivity-AI-Systems) --> irreversible semantic memory
+
+→ [Hyperloop → FXSO](https://github.com/leenathomas01/hyperloop-fxso) --> Emergent intelligence via constrained dynamical fields
+
+---
