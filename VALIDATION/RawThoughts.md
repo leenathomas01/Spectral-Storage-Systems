@@ -1,4 +1,4 @@
-> Raw thoughts/ runs and their analysis done before polishing
+> This file contains Raw thoughts/ runs and their analysis done before polishing. Not relevant to repo. Only for personal tracking. This may be ignored.
 
 
 ---
