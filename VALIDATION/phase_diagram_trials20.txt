@@ -35,6 +35,8 @@ alpha |  SNR dB | sep_rate |    acc |  valid | mean_H_E | State
  1.00 |   -40.0 |     1.00 |   0.00 |   0.00 |    0.000 | mis-selection
 Phase diagram plot saved: VALIDATION\spectral_phase_diagram.png
 
+(This was renamed to spectral_phase_diagram_20.png and uploaded in VALIDATION\plots)
+
 C:\pythonSSS>
 
 --------------------
