@@ -199,6 +199,7 @@ python VALIDATION/spectral_tensor_emulator.py \
 - Not a claim about NAND replacement
 - Not a physical storage device
 - Not a validated hardware architecture
+- Not claiming γ replaces ECC. γ is reachability; ECC is error correction. Orthogonal.
 
 It is a mathematical model with a reproducible validation loop and explicit
 falsification criteria. Physical implementation is a downstream question.
@@ -207,7 +208,7 @@ falsification criteria. Physical implementation is a downstream question.
 
 ## Lineage
 
-SSS evolved from a prior architecture (preserved in `PRIOR/`),
+SSS evolved from a prior architecture IVSA (preserved in `PRIOR/`),
 which itself grew from an earlier holographic storage concept (ZPRE-11).
 
 The core pivot:
