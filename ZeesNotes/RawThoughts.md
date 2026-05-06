@@ -1,4 +1,6 @@
-> This file contains Raw thoughts/ runs and their analysis done before polishing. Not relevant to repo. Only for personal tracking. This may be ignored.
+> This file contains Raw thoughts/ runs and their analysis done before polishing. Not relevant to repo. Only for personal tracking.
+>
+>  This file may be ignored.
 
 
 ---
@@ -186,7 +188,8 @@ mean_H_E values stable to 3 decimal places. This result is citable.
 
 ---
 
-## ROADMAP -ish (i mean hellooo? This is my downtime hobby?)
+## ROADMAP -ish 
+(i mean hellooo? This is my downtime hobby?)
 
 ### Current State
 
